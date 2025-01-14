@@ -1,2 +1,111 @@
 2025-01-14 13:23:43,194 - INFO - ⚡ Starting Robust Internet Speed Test...
 
+2025-01-14 14:38:38,071 - INFO - [TCP] - ⚡ Starting Robust Internet Speed Test with Protocol Diversity...
+
+2025-01-14 14:38:40,075 - WARNING - [TCP] - TCP Ping 1 to 8.8.8.8 failed.
+2025-01-14 14:38:42,182 - WARNING - [TCP] - TCP Ping 2 to 8.8.8.8 failed.
+2025-01-14 14:38:44,286 - WARNING - [TCP] - TCP Ping 3 to 8.8.8.8 failed.
+2025-01-14 14:38:46,392 - WARNING - [TCP] - TCP Ping 4 to 8.8.8.8 failed.
+2025-01-14 14:38:48,500 - WARNING - [TCP] - TCP Ping 5 to 8.8.8.8 failed.
+2025-01-14 14:42:52,922 - INFO - [TCP] - ⚡ Starting Robust Internet Speed Test with Protocol Diversity...
+
+2025-01-14 14:42:54,935 - WARNING - [TCP] - TCP Ping 1 to 8.8.8.8 failed.
+2025-01-14 14:42:57,040 - WARNING - [TCP] - TCP Ping 2 to 8.8.8.8 failed.
+2025-01-14 14:42:59,144 - WARNING - [TCP] - TCP Ping 3 to 8.8.8.8 failed.
+2025-01-14 14:43:01,248 - WARNING - [TCP] - TCP Ping 4 to 8.8.8.8 failed.
+2025-01-14 14:43:03,360 - WARNING - [TCP] - TCP Ping 5 to 8.8.8.8 failed.
+2025-01-14 14:43:05,467 - WARNING - [TCP] - UDP Ping 1 to 8.8.8.8 failed.
+2025-01-14 14:43:07,575 - WARNING - [TCP] - UDP Ping 2 to 8.8.8.8 failed.
+2025-01-14 14:43:09,681 - WARNING - [TCP] - UDP Ping 3 to 8.8.8.8 failed.
+2025-01-14 14:43:11,784 - WARNING - [TCP] - UDP Ping 4 to 8.8.8.8 failed.
+2025-01-14 14:43:13,887 - WARNING - [TCP] - UDP Ping 5 to 8.8.8.8 failed.
+2025-01-14 14:43:14,043 - DEBUG - [TCP] - ICMP Ping 1 to 8.8.8.8: 24.72 ms
+2025-01-14 14:43:14,181 - DEBUG - [TCP] - ICMP Ping 2 to 8.8.8.8: 20.85 ms
+2025-01-14 14:43:14,315 - DEBUG - [TCP] - ICMP Ping 3 to 8.8.8.8: 23.60 ms
+2025-01-14 14:43:14,447 - DEBUG - [TCP] - ICMP Ping 4 to 8.8.8.8: 18.25 ms
+2025-01-14 14:43:14,578 - DEBUG - [TCP] - ICMP Ping 5 to 8.8.8.8: 19.23 ms
+2025-01-14 14:43:14,715 - DEBUG - [TCP] - TCP Ping 1 to 1.1.1.1: 31.11 ms
+2025-01-14 14:43:14,850 - DEBUG - [TCP] - TCP Ping 2 to 1.1.1.1: 31.41 ms
+2025-01-14 14:43:14,982 - DEBUG - [TCP] - TCP Ping 3 to 1.1.1.1: 28.03 ms
+2025-01-14 14:43:15,114 - DEBUG - [TCP] - TCP Ping 4 to 1.1.1.1: 30.14 ms
+2025-01-14 14:43:15,248 - DEBUG - [TCP] - TCP Ping 5 to 1.1.1.1: 29.23 ms
+2025-01-14 14:43:17,353 - WARNING - [TCP] - UDP Ping 1 to 1.1.1.1 failed.
+2025-01-14 14:43:19,461 - WARNING - [TCP] - UDP Ping 2 to 1.1.1.1 failed.
+2025-01-14 14:43:21,564 - WARNING - [TCP] - UDP Ping 3 to 1.1.1.1 failed.
+2025-01-14 14:43:23,670 - WARNING - [TCP] - UDP Ping 4 to 1.1.1.1 failed.
+2025-01-14 14:43:25,776 - WARNING - [TCP] - UDP Ping 5 to 1.1.1.1 failed.
+2025-01-14 14:43:25,920 - DEBUG - [TCP] - ICMP Ping 1 to 1.1.1.1: 31.12 ms
+2025-01-14 14:43:26,059 - DEBUG - [TCP] - ICMP Ping 2 to 1.1.1.1: 28.01 ms
+2025-01-14 14:43:26,206 - DEBUG - [TCP] - ICMP Ping 3 to 1.1.1.1: 30.14 ms
+2025-01-14 14:43:26,347 - DEBUG - [TCP] - ICMP Ping 4 to 1.1.1.1: 28.60 ms
+2025-01-14 14:43:26,509 - DEBUG - [TCP] - ICMP Ping 5 to 1.1.1.1: 28.21 ms
+2025-01-14 14:43:28,617 - WARNING - [TCP] - TCP Ping 1 to 13.32.0.0 failed.
+2025-01-14 14:43:30,725 - WARNING - [TCP] - TCP Ping 2 to 13.32.0.0 failed.
+2025-01-14 14:43:32,832 - WARNING - [TCP] - TCP Ping 3 to 13.32.0.0 failed.
+2025-01-14 14:43:34,939 - WARNING - [TCP] - TCP Ping 4 to 13.32.0.0 failed.
+2025-01-14 14:43:37,045 - WARNING - [TCP] - TCP Ping 5 to 13.32.0.0 failed.
+2025-01-14 14:43:39,149 - WARNING - [TCP] - UDP Ping 1 to 13.32.0.0 failed.
+2025-01-14 14:43:41,255 - WARNING - [TCP] - UDP Ping 2 to 13.32.0.0 failed.
+2025-01-14 14:43:43,362 - WARNING - [TCP] - UDP Ping 3 to 13.32.0.0 failed.
+2025-01-14 14:43:45,469 - WARNING - [TCP] - UDP Ping 4 to 13.32.0.0 failed.
+2025-01-14 14:43:47,576 - WARNING - [TCP] - UDP Ping 5 to 13.32.0.0 failed.
+2025-01-14 14:43:58,702 - WARNING - [TCP] - ICMP Ping 1 to 13.32.0.0 failed.
+2025-01-14 14:44:09,830 - WARNING - [TCP] - ICMP Ping 2 to 13.32.0.0 failed.
+2025-01-14 14:44:20,959 - WARNING - [TCP] - ICMP Ping 3 to 13.32.0.0 failed.
+2025-01-14 14:44:32,086 - WARNING - [TCP] - ICMP Ping 4 to 13.32.0.0 failed.
+2025-01-14 14:44:43,210 - WARNING - [TCP] - ICMP Ping 5 to 13.32.0.0 failed.
+2025-01-14 14:44:43,315 - INFO - [TCP] - 🔽 Starting Download Tests...
+
+2025-01-14 14:48:18,997 - INFO - [TCP] - ⚡ Starting Robust Internet Speed Test with Protocol Diversity...
+
+2025-01-14 14:48:21,017 - WARNING - [TCP] - TCP Ping 1 to 8.8.8.8 failed.
+2025-01-14 14:48:23,124 - WARNING - [TCP] - TCP Ping 2 to 8.8.8.8 failed.
+2025-01-14 14:49:20,197 - INFO - [TCP] - ⚡ Starting Robust Internet Speed Test with Protocol Diversity...
+
+2025-01-14 14:49:22,201 - WARNING - [TCP] - TCP Ping 1 to 8.8.8.8 failed.
+2025-01-14 14:49:24,307 - WARNING - [TCP] - TCP Ping 2 to 8.8.8.8 failed.
+2025-01-14 14:49:26,416 - WARNING - [TCP] - TCP Ping 3 to 8.8.8.8 failed.
+2025-01-14 14:49:28,522 - WARNING - [TCP] - TCP Ping 4 to 8.8.8.8 failed.
+2025-01-14 14:49:30,627 - WARNING - [TCP] - TCP Ping 5 to 8.8.8.8 failed.
+2025-01-14 14:49:32,731 - WARNING - [TCP] - UDP Ping 1 to 8.8.8.8 failed.
+2025-01-14 14:49:34,836 - WARNING - [TCP] - UDP Ping 2 to 8.8.8.8 failed.
+2025-01-14 14:49:36,941 - WARNING - [TCP] - UDP Ping 3 to 8.8.8.8 failed.
+2025-01-14 14:49:39,044 - WARNING - [TCP] - UDP Ping 4 to 8.8.8.8 failed.
+2025-01-14 14:49:41,148 - WARNING - [TCP] - UDP Ping 5 to 8.8.8.8 failed.
+2025-01-14 14:49:41,290 - DEBUG - [TCP] - ICMP Ping 1 to 8.8.8.8: 17.85 ms
+2025-01-14 14:49:41,435 - DEBUG - [TCP] - ICMP Ping 2 to 8.8.8.8: 17.99 ms
+2025-01-14 14:49:41,566 - DEBUG - [TCP] - ICMP Ping 3 to 8.8.8.8: 17.29 ms
+2025-01-14 14:49:41,700 - DEBUG - [TCP] - ICMP Ping 4 to 8.8.8.8: 21.61 ms
+2025-01-14 14:49:41,833 - DEBUG - [TCP] - ICMP Ping 5 to 8.8.8.8: 21.28 ms
+2025-01-14 14:49:41,968 - DEBUG - [TCP] - TCP Ping 1 to 1.1.1.1: 30.02 ms
+2025-01-14 14:49:42,103 - DEBUG - [TCP] - TCP Ping 2 to 1.1.1.1: 28.35 ms
+2025-01-14 14:49:42,233 - DEBUG - [TCP] - TCP Ping 3 to 1.1.1.1: 29.24 ms
+2025-01-14 14:49:42,364 - DEBUG - [TCP] - TCP Ping 4 to 1.1.1.1: 29.70 ms
+2025-01-14 14:49:42,496 - DEBUG - [TCP] - TCP Ping 5 to 1.1.1.1: 26.91 ms
+2025-01-14 14:49:44,602 - WARNING - [TCP] - UDP Ping 1 to 1.1.1.1 failed.
+2025-01-14 14:49:46,708 - WARNING - [TCP] - UDP Ping 2 to 1.1.1.1 failed.
+2025-01-14 14:49:48,816 - WARNING - [TCP] - UDP Ping 3 to 1.1.1.1 failed.
+2025-01-14 14:49:50,923 - WARNING - [TCP] - UDP Ping 4 to 1.1.1.1 failed.
+2025-01-14 14:49:53,030 - WARNING - [TCP] - UDP Ping 5 to 1.1.1.1 failed.
+2025-01-14 14:49:53,180 - DEBUG - [TCP] - ICMP Ping 1 to 1.1.1.1: 31.10 ms
+2025-01-14 14:49:53,325 - DEBUG - [TCP] - ICMP Ping 2 to 1.1.1.1: 28.51 ms
+2025-01-14 14:49:53,465 - DEBUG - [TCP] - ICMP Ping 3 to 1.1.1.1: 28.43 ms
+2025-01-14 14:49:53,612 - DEBUG - [TCP] - ICMP Ping 4 to 1.1.1.1: 28.36 ms
+2025-01-14 14:49:53,759 - DEBUG - [TCP] - ICMP Ping 5 to 1.1.1.1: 32.97 ms
+2025-01-14 14:49:55,866 - WARNING - [TCP] - TCP Ping 1 to 13.32.0.0 failed.
+2025-01-14 14:49:57,974 - WARNING - [TCP] - TCP Ping 2 to 13.32.0.0 failed.
+2025-01-14 14:50:00,081 - WARNING - [TCP] - TCP Ping 3 to 13.32.0.0 failed.
+2025-01-14 14:50:02,187 - WARNING - [TCP] - TCP Ping 4 to 13.32.0.0 failed.
+2025-01-14 14:50:04,292 - WARNING - [TCP] - TCP Ping 5 to 13.32.0.0 failed.
+2025-01-14 14:50:06,398 - WARNING - [TCP] - UDP Ping 1 to 13.32.0.0 failed.
+2025-01-14 14:50:08,504 - WARNING - [TCP] - UDP Ping 2 to 13.32.0.0 failed.
+2025-01-14 14:50:10,611 - WARNING - [TCP] - UDP Ping 3 to 13.32.0.0 failed.
+2025-01-14 14:50:12,715 - WARNING - [TCP] - UDP Ping 4 to 13.32.0.0 failed.
+2025-01-14 14:50:14,819 - WARNING - [TCP] - UDP Ping 5 to 13.32.0.0 failed.
+2025-01-14 14:50:25,945 - WARNING - [TCP] - ICMP Ping 1 to 13.32.0.0 failed.
+2025-01-14 14:50:37,067 - WARNING - [TCP] - ICMP Ping 2 to 13.32.0.0 failed.
+2025-01-14 14:50:48,190 - WARNING - [TCP] - ICMP Ping 3 to 13.32.0.0 failed.
+2025-01-14 14:50:59,318 - WARNING - [TCP] - ICMP Ping 4 to 13.32.0.0 failed.
+2025-01-14 14:51:10,442 - WARNING - [TCP] - ICMP Ping 5 to 13.32.0.0 failed.
+2025-01-14 14:51:10,548 - INFO - [TCP] - 🔽 Starting Download Tests...
+

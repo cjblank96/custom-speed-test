@@ -8,6 +8,10 @@ from utils.logger import logger
 
 PING_ATTEMPTS = LATENCY_ATTEMPTS
 
+def safe_format(value, precision=2, suffix="ms"):
+    """Safely format numerical values; return 'N/A' if None."""
+    return f"{value:.{precision}f} {suffix}" if value is not None else "N/A"
+
 def tcp_ping(host, port=80):
     """Ping a server over TCP."""
     try:
@@ -103,8 +107,8 @@ def latency_test():
             }
 
             print(f"\n📡 **{host} ({protocol.upper()})**\n"
-                  f"  - Avg Latency: {avg_latency:.2f} ms\n"
-                  f"  - Jitter: {jitter:.2f} ms\n"
-                  f"  - Packet Loss: {packet_loss:.2f}%\n")
+                  f"  - Avg Latency: {safe_format(avg_latency)}\n"
+                  f"  - Jitter: {safe_format(jitter)}\n"
+                  f"  - Packet Loss: {safe_format(packet_loss, suffix='%')}\n")
 
     return results

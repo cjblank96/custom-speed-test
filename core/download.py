@@ -8,6 +8,10 @@ from utils.logger import logger
 
 PING_ATTEMPTS = 3  # Number of pings per server
 
+def safe_format(value, precision=2, suffix="ms"):
+    """Safely format numerical values; return 'N/A' if None."""
+    return f"{value:.{precision}f} {suffix}" if value is not None else "N/A"
+
 def ping_server(host):
     """Ping a server to measure latency."""
     latencies = []
@@ -32,7 +36,7 @@ def select_best_download_server():
     for server in DOWNLOAD_URLS:
         latency = ping_server(server['host'])
         if latency != float('inf'):
-            print(f"✅ {server['host']} - {latency:.2f} ms")
+            print(f"✅ {server['host']} - {safe_format(latency)}")
         else:
             print(f"❌ {server['host']} - Unreachable")
 
@@ -41,7 +45,7 @@ def select_best_download_server():
             best_server = server
 
     if best_server:
-        print(f"\n🚀 Selected Download Server: {best_server['host']} with {lowest_latency:.2f} ms latency.")
+        print(f"\n🚀 Selected Download Server: {best_server['host']} with {safe_format(lowest_latency)} latency.")
         return best_server
     else:
         logger.error("⚠️ No download servers are reachable.")
@@ -58,11 +62,11 @@ def run_iperf_download_test(server, protocol="tcp"):
 
     result = client.run()
     if result.error:
-        logger.error(f"❌ Download test failed: {result.error}")
+        logger.error(f"❌ Download test failed: {result.error}", protocol=protocol)
         return 0
     else:
         speed_mbps = result.received_Mbps
-        print(f"📊 Download Speed from {server['host']} over {protocol.upper()}: {speed_mbps:.2f} Mbps")
+        print(f"📊 Download Speed from {server['host']} over {protocol.upper()}: {safe_format(speed_mbps, suffix='Mbps')}")
         return speed_mbps
 
 def measure_latency_under_load(server, duration=10):
@@ -80,34 +84,39 @@ def measure_latency_under_load(server, duration=10):
     ping_thread.start()
     return ping_thread, latencies
 
-def download_test():
+def download_test(protocol="tcp"):
     """Conducts download speed test using iPerf3 with protocol diversity and latency checks."""
     best_server = select_best_download_server()
     if not best_server:
-        logger.error("❌ No server available for download test.")
+        logger.error("❌ No server available for download test.", protocol=protocol)
         return 0
 
     threads, results = [], []
 
-    for protocol in ["tcp", "udp"]:
-        for file_size in FILE_SIZES:
-            ping_thread, latencies = measure_latency_under_load(best_server)
+    for file_size in FILE_SIZES:
+        logger.info(f"📥 Starting {protocol.upper()} download test for file size {file_size} MB.", protocol=protocol)
 
-            t = threading.Thread(target=lambda: results.append(run_iperf_download_test(best_server, protocol=protocol)))
-            t.start()
-            threads.append(t)
+        ping_thread, latencies = measure_latency_under_load(best_server)
 
-            ping_thread.join()
+        t = threading.Thread(target=lambda: results.append(run_iperf_download_test(best_server, protocol=protocol)))
+        t.start()
+        threads.append(t)
 
-            print(f"📉 Average Latency Under Load: {statistics.mean(latencies):.2f} ms")
+        ping_thread.join()
+
+        if latencies:
+            avg_latency = statistics.mean(latencies)
+            print(f"📉 Average Latency Under Load: {safe_format(avg_latency)}")
+        else:
+            logger.warning("⚠️ No latency data collected during load.", protocol=protocol)
 
     for t in threads:
         t.join()
 
     if results:
         avg_speed = statistics.mean(results)
-        print(f"\n📊 **Average Download Speed:** {avg_speed:.2f} Mbps\n")
+        print(f"\n📊 **Average Download Speed ({protocol.upper()}):** {safe_format(avg_speed, suffix='Mbps')}\n")
         return avg_speed
     else:
-        logger.error("❌ Download test failed for all attempts.")
+        logger.error(f"❌ Download test failed for all {protocol.upper()} attempts.", protocol=protocol)
         return 0
