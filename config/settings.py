@@ -1,11 +1,31 @@
 # Configuration file for URLs and settings
 
+# Example Download URLs (replace with actual servers)
 DOWNLOAD_URLS = [
-    "http://speed.hetzner.de/100MB.bin",
-    "http://ipv4.download.thinkbroadband.com/100MB.zip"
+    "https://speedtest.server1.com",
+    "https://speedtest.server2.com",
+    "https://speedtest.server3.com"
 ]
 
-UPLOAD_SERVER = "http://your-upload-server/upload"
 
-LATENCY_TEST_HOST = "8.8.8.8"
-LATENCY_ATTEMPTS = 10
+# Upload servers (replace with actual URLs)
+UPLOAD_SERVERS = [
+    "https://upload-server1.com/upload",
+    "https://upload-server2.com/upload"
+]
+
+# File sizes in MB for testing
+FILE_SIZES = [1, 10, 25, 100]
+
+# Latency test servers
+LATENCY_TEST_HOSTS = [
+    "google.com",
+    "cloudflare.com",
+    "amazon.com"
+]
+
+# Number of ping attempts
+LATENCY_ATTEMPTS = 5
+
+# Protocol selection: 'http1' or 'http3'
+PROTOCOL = "http1"
